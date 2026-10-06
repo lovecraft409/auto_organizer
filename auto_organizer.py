@@ -5,7 +5,8 @@ folders = {
 	".jpeg": "Images",
 	".txt" : "Documents",
 	".mp3" : "Music",
-	".docx" : "Documents" 
+	".docx" : "Documents",
+	".py": "Python Files"
 }
 
 def organize(folder_name):
@@ -27,3 +28,4 @@ def organize(folder_name):
 			print(item.name, "Bro moved to", destination)
 
 organize(Path.home() / "Downloads")
+organize(Path.home() / "Documents")
